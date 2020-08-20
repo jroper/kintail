@@ -5,7 +5,8 @@
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp",
-    "build": "gulp sass"
+    "build": "gulp sass",
+    "dist": "gulp dist"
   },
   "author": "ZURB <foundation@zurb.com>",
   "license": "MIT",
@@ -23,9 +24,12 @@
     "autoprefixer": "^9.1.5",
     "browser-sync": "^2.18.13",
     "gulp": "^4.0.0",
+    "gulp-fingerprint": "^1.0.0",
     "gulp-load-plugins": "^1.1.0",
     "gulp-postcss": "^8.0.0",
-    "gulp-sass": "^4.0.1"
+    "gulp-rev": "^9.0.0",
+    "gulp-sass": "^4.0.1",
+    "merge-stream": "^2.0.0"
   },
   "repository": {
     "type": "git",

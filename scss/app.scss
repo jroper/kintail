@@ -63,7 +63,7 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
-a, a:visited, a:hover {
+a, a:visited, a:hover, a:focus {
   color: $dark-dark-green;
 }
 
@@ -97,7 +97,7 @@ a {
 
 .hero-outer {
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/hero.jpg") no-repeat fixed 50% 50%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("hero.jpg") no-repeat fixed 50% 50%;
   min-height: 563px;
   padding: 273px 0;
 }
@@ -122,7 +122,7 @@ a {
   background-color: $dark-green;
   color: white;
   display: block;
-  a, a:visited, a:hover {
+  a, a:visited, a:hover, a:focus {
     color: white;
   }
 }
@@ -150,17 +150,18 @@ a {
     font-size: 14pt;
     padding: 12px 70px;
     border-radius: 20px;
+    margin-left: 10px;
   }
 }
 
 footer {
   padding-bottom: 50px;
   h4 {
-    padding-top: 50px;
+    padding-top: 20px;
     text-transform: uppercase;
   }
   h5 {
-    padding-top: 50px;
+    padding-top: 20px;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 12pt;
@@ -168,4 +169,17 @@ footer {
   a {
     font-weight: normal;
   }
+}
+
+.recaptcha {
+  color: $dark-green;
+  font-size: 10pt;
+
+  a, a:visited, a:hover, a:focus {
+    color: $dark-green;
+  }
+}
+
+.grecaptcha-badge {
+  visibility: hidden;
 }

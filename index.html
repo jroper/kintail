@@ -7,12 +7,12 @@
 
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Work+Sans">
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="assets/app.css">
 
     <link rel="canonical" href="https://www.kintailaccounting.com.au/">
 
     <!-- TODO -->
-    <link rel="icon" type="image/x-icon" href="https://static-cdn.multiscreensite.com/runtime/favicon_d1_res.ico">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 
 
     <title>Kintail Accounting</title>
@@ -42,9 +42,9 @@
             <span class="hide-for-medium" data-responsive-toggle="nav-menu">
               <button class="menu-icon" type="button" data-toggle="nav-menu"></button>
             </span>
-            <img src="./assets/logo.jpg" alt="Kintail Accounting"/>
+            <img src="assets/logo.jpg" alt="Kintail Accounting"/>
             <nav class="nav-menu" id="nav-menu" data-animate="hinge-in-from-top hinge-out-from-top">
-                <ul class="vertical medium-horizontal menu" data-responsive-menu="accordion medium-dropdown">
+                <ul class="vertical medium-horizontal menu">
                     <li><a href="#Home">Home</a></li>
                     <li><a href="#Services">Services</a></li>
                     <li><a href="#Contact">Contact</a></li>
@@ -140,7 +140,7 @@
     <div class="body-container">
         <div class="grid-x grid-padding-x">
             <div class="large-12 cell">
-                <form action="https://formspree.io/mrgyvkkk" method="POST" class="clearfix">
+                <form action="https://formspree.io/mrgyvkkk" method="POST" class="clearfix" id="contact-us-form">
                     <h3>Contact Us</h3>
                     <label>
                         Name:
@@ -166,6 +166,10 @@
                             data-action="submit">Send Message
                     </button>
 
+                    <div class="recaptcha">This site is protected by reCAPTCHA and the Google
+                        <a href="https://policies.google.com/privacy">Privacy Policy</a> and
+                        <a href="https://policies.google.com/terms">Terms of Service</a> apply.</div>
+
                 </form>
             </div>
         </div>
@@ -177,7 +181,7 @@
         <div class="medium-4 cell">
 
             <h4>Kintail Accounting</h4>
-            <img src="./assets/ipa-logo.png"/>
+            <img src="assets/ipa-logo.png"/>
         </div>
         <div class="medium-4 cell">
 
@@ -214,10 +218,10 @@
     </div>
 </footer>
 
-<script src="node_modules/jquery/dist/jquery.js"></script>
-<script src="node_modules/what-input/dist/what-input.js"></script>
-<script src="node_modules/foundation-sites/dist/js/foundation.js"></script>
+<script src="assets/jquery.js"></script>
+<script src="assets/what-input.js"></script>
+<script src="assets/foundation.js"></script>
 <script src="https://www.google.com/recaptcha/api.js"></script>
-<script src="js/app.js"></script>
+<script src="assets/app.js"></script>
 </body>
 </html>
