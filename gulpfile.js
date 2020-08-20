@@ -44,7 +44,7 @@ function rebase() {
     "node_modules/foundation-sites/dist/js/foundation.js",
   ]).pipe(gulp.dest("dist/assets"))
       .pipe(browserSync.stream());
-  const base = gulp.src(["index.html", "favicon.ico"])
+  const base = gulp.src(["index.html", "favicon.ico", "CNAME"])
       .pipe(gulp.dest("dist"))
       .pipe(browserSync.stream());
 
