@@ -95,6 +95,10 @@ a {
   padding-bottom: 20px;
 }
 
+.logo {
+  max-width: 85%;
+}
+
 .hero-outer {
   width: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("hero.jpg") no-repeat fixed 50% 50%;
@@ -137,20 +141,25 @@ a {
 }
 
 .contact-form {
-  form {
-    border: 1px solid $dark-dark-green;
-    margin: 50px;
-    padding: 50px;
-    display: block;
+  @include breakpoint(medium) {
+    form {
+      border: 1px solid $dark-dark-green;
+      margin: 50px;
+      padding: 50px;
+      display: block;
+    }
+    button.button.success {
+      padding: 12px 70px;
+      float: right;
+      margin-left: 10px;
+    }
   }
 
   .button.success {
     color: white;
-    float: right;
     font-size: 14pt;
-    padding: 12px 70px;
+    padding: 12px 20px;
     border-radius: 20px;
-    margin-left: 10px;
   }
 }
 
@@ -168,6 +177,9 @@ footer {
   }
   a {
     font-weight: normal;
+  }
+  .ipa-logo {
+    max-width: 80%;
   }
 }
 
